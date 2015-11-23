@@ -1,0 +1,319 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_string",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntStr",
+        "In": {
+            "obj": {
+                "Prop1": "a",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa"
+            }
+        },
+        "Out": {
+            "EntStrId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "a",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "a",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntStr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntStrId": "1",
+                "Prop1": "a",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa",
+                "Prop5": "clicpilot"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntStr",
+        "In": {
+            "obj": {
+                "Prop1": "b",
+                "Prop2": "bb",
+                "Prop3": "bbb",
+                "Prop4": "bbbb"
+            }
+        },
+        "Out": {
+            "EntStrId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "2",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "2",
+            "Prop1": "b",
+            "Prop2": "bb",
+            "Prop3": "bbb",
+            "Prop4": "bbbb",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "2",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "2",
+            "Prop1": "b",
+            "Prop2": "bb",
+            "Prop3": "bbb",
+            "Prop4": "bbbb",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntStr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntStrId": "1",
+                "Prop1": "a",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa",
+                "Prop5": "clicpilot"
+            }, {
+                "EntStrId": "2",
+                "Prop1": "b",
+                "Prop2": "bb",
+                "Prop3": "bbb",
+                "Prop4": "bbbb",
+                "Prop5": "clicpilot"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "a",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "a",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilot"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntStr",
+        "In": {
+            "obj": {
+                "EntStrId": "1",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa",
+                "Prop5": "clicpilotx",
+                "Prop1": "ax"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "ax",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilotx"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "ax",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilotx"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntStr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntStrId": "1",
+                "Prop1": "ax",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa",
+                "Prop5": "clicpilotx"
+            }, {
+                "EntStrId": "2",
+                "Prop1": "b",
+                "Prop2": "bb",
+                "Prop3": "bbb",
+                "Prop4": "bbbb",
+                "Prop5": "clicpilot"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntStr",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "ax",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilotx"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntStrId": "1",
+            "Prop1": "ax",
+            "Prop2": "aa",
+            "Prop3": "aaa",
+            "Prop4": "aaaa",
+            "Prop5": "clicpilotx"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntStr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntStrId": "1",
+                "Prop1": "ax",
+                "Prop2": "aa",
+                "Prop3": "aaa",
+                "Prop4": "aaaa",
+                "Prop5": "clicpilotx"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntStr",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntStr",
+        "In": {
+            "id": "1",
+            "fields": ["EntStrId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntStr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

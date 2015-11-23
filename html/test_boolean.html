@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Test Boolean</h1>
+      <pre id="msg"></pre>
+      <h4>Create</h4>
+      <form class="cp-create" cp-entity-name="EntBool" cp-action-name="CreateEntBool" cp-complete-observer="['CreateEntBool', 'ReadEntBool', 'UpdateEntBool', 'QueryEntBool']">
+        <label>Prop1</label>
+        <select class="cp-boolean" cp-prop-name="Prop1">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <p></p>
+        <label>Prop2 (nullable true)</label>
+        <select class="cp-boolean" cp-nullable="true" cp-prop-name="Prop2">
+          <option value=""></option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <p></p>
+        <label>Prop3 (nullable false, default value true)</label><p>
+        <input type="hidden" class="cp-boolean" cp-prop-name="Prop3" cp-nullable="false" cp-exclude="true" cp-default-value="true" value="">
+        </input>
+        <p></p>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+      <h4>Read</h4>
+      <form class="cp-read" cp-entity-name="EntBool" cp-action-name="ReadEntBool" cp-field="['EntBoolId','Prop1','Prop2', 'Prop3']"  >
+        <label>Prop1</label>
+        <span>{{=it.Prop1?it.Prop1:'&nbsp;'}}</span>
+        <p/>
+        <label>Prop2</label>
+        <span>{{=it.Prop2?it.Prop2:'&nbsp;'}}</span>
+        <p/>
+        <label>Prop3</label>
+        <span>{{=it.Prop3?it.Prop3:'&nbsp;'}}</span>
+        <p/>
+
+        <button type="button" class="cp-delete" cp-entity-name="EntBool" cp-action-name="DeleteEntBool"  cp-complete-observer="['CreateEntBool', 'ReadEntBool', 'UpdateEntBool', 'QueryEntBool']" onclick="javascript:CP_DoAction('DeleteEntBool', {Id: {{=it.EntBoolId?it.EntBoolId:'0'}} });return false;">Delete</button>
+      </form>
+      <h4>Update</h4>
+      <form class="cp-update" cp-entity-name="EntBool" cp-action-name="UpdateEntBool" cp-read-action-name="ReadUpdateEntBool" cp-read-field="['EntBoolId','Prop1','Prop2', 'Prop3']" cp-complete-observer="['CreateEntBool', 'ReadEntBool', 'UpdateEntBool', 'QueryEntBool']" >
+        <label>Prop1</label>
+        <select class="cp-boolean" cp-prop-name="Prop1">
+          {{ if(eval(it.Prop1)) { }}
+          <option value="true" selected="selected">True</option>
+          <option value="false" >False</option>
+          {{ } else { }}
+          <option value="true" >True</option>
+          <option value="false"  selected="selected">False</option>
+          {{ } }}
+        </select>
+        <p></p>
+        <label>Prop2</label>
+        <select class="cp-boolean" cp-prop-name="Prop2">
+          {{ if(eval(it.Prop2)) { }}
+          <option value="true" selected="selected">True</option>
+          <option value="false" >False</option>
+          {{ } else { }}
+          <option value="true">True</option>
+          <option value="false"  selected="selected">False</option>
+          {{ } }}
+        </select>
+        <p></p>
+        <label>Prop3</label>
+        <select class="cp-boolean" cp-prop-name="Prop3">
+          {{ if(eval(it.Prop3)) { }}
+          <option value="true" selected="selected">True</option>
+          <option value="false" >False</option>
+          {{ } else { }}
+          <option value="true" >True</option>
+          <option value="false"  selected="selected">False</option>
+          {{ } }}
+        </select>
+        <p></p>
+
+        <button type="button" class="cp-submit">Update</button>
+
+
+      </form>
+
+
+      <h4>Query</h4>
+      <ul class="cp-query" cp-entity-name="EntBool" cp-action-name="QueryEntBool" cp-field="['EntBoolId', 'Prop1', 'Prop2', 'Prop3']">
+        <li>
+          <span>{{=it.EntBoolId}}</span>
+          <span>{{=it.Prop1}}</span>
+          <span>{{=it.Prop2}}</span>
+          <span>{{=it.Prop3}}</span>
+
+          <a href="#" onclick="javascript:CP_UpdateView('UpdateEntBool', {Id: $(this).siblings().first().text()});return false;">Update</a>
+          <a href="#" onclick="javascript:CP_DoAction('DeleteEntBool', {Id: $(this).siblings().first().text()});return false;">Delete</a>
+        </li>
+      </ul>
+                <script>
+    window.ShowError = function(msg) {
+      $("#msg").text(msg);
+    }
+
+    window.ShowActionMsg = window.ShowError;
+    window.ShowMessage = window.ShowError;
+
+    </script>
+      <script src="../jquery-1.11.1.min.js"></script>
+
+    </body>
+
+</html>  

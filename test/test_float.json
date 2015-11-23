@@ -1,0 +1,291 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_float",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntFloat",
+        "In": {
+            "obj": {
+                "Prop1": "1.1",
+                "Prop2": "2.2",
+                "Prop3": "3.3"
+            }
+        },
+        "Out": {
+            "EntFloatId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntFloat",
+        "In": {
+            "id": "1",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "1",
+            "Prop1": "1.1",
+            "Prop2": "2.2",
+            "Prop3": "3.3",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "1",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "1",
+            "Prop1": "1.1",
+            "Prop2": "2.2",
+            "Prop3": "3.3",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntFloat",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntFloatId": "1",
+                "Prop1": "1.1",
+                "Prop2": "2.2",
+                "Prop3": "3.3",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntFloat",
+        "In": {
+            "obj": {
+                "Prop1": "2.2",
+                "Prop2": "3.3",
+                "Prop3": "4.4",
+                "Prop4": "5.5"
+            }
+        },
+        "Out": {
+            "EntFloatId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntFloat",
+        "In": {
+            "id": "2",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "2",
+            "Prop1": "2.2",
+            "Prop2": "3.3",
+            "Prop3": "4.4",
+            "Prop4": "5.5",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "2",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "2",
+            "Prop1": "2.2",
+            "Prop2": "3.3",
+            "Prop3": "4.4",
+            "Prop4": "5.5",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntFloat",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntFloatId": "1",
+                "Prop1": "1.1",
+                "Prop2": "2.2",
+                "Prop3": "3.3",
+                "Prop5": "10.01"
+            }, {
+                "EntFloatId": "2",
+                "Prop1": "2.2",
+                "Prop2": "3.3",
+                "Prop3": "4.4",
+                "Prop4": "5.5",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "1",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "1",
+            "Prop1": "1.1",
+            "Prop2": "2.2",
+            "Prop3": "3.3",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntFloat",
+        "In": {
+            "obj": {
+                "EntFloatId": "1",
+                "Prop1": "1.1",
+                "Prop2": "2.2",
+                "Prop3": "3.3",
+                "Prop4": "4.4",
+                "Prop5": "10.01"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "1",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "1",
+            "Prop1": "1.1",
+            "Prop2": "2.2",
+            "Prop3": "3.3",
+            "Prop4": "4.4",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntFloat",
+        "In": {
+            "id": "2",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "2",
+            "Prop1": "2.2",
+            "Prop2": "3.3",
+            "Prop3": "4.4",
+            "Prop4": "5.5",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntFloat",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntFloatId": "1",
+                "Prop1": "1.1",
+                "Prop2": "2.2",
+                "Prop3": "3.3",
+                "Prop4": "4.4",
+                "Prop5": "10.01"
+            }, {
+                "EntFloatId": "2",
+                "Prop1": "2.2",
+                "Prop2": "3.3",
+                "Prop3": "4.4",
+                "Prop4": "5.5",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntFloat",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntFloat",
+        "In": {
+            "id": "2",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntFloatId": "2",
+            "Prop1": "2.2",
+            "Prop2": "3.3",
+            "Prop3": "4.4",
+            "Prop4": "5.5",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "1",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntFloat",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntFloatId": "2",
+                "Prop1": "2.2",
+                "Prop2": "3.3",
+                "Prop3": "4.4",
+                "Prop4": "5.5",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntFloat",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntFloat",
+        "In": {
+            "id": "2",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntFloat",
+        "In": {
+            "id": "0",
+            "fields": ["EntFloatId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntFloat",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

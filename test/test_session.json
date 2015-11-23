@@ -1,0 +1,155 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_session",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntSsn",
+        "In": {
+            "obj": {
+                "Prop1": "a"
+            }
+        },
+        "Out": {
+            "EntSsnId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntSsn",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntSsnId": "1",
+                "Prop1": "a 2015"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntSsn",
+        "In": {
+            "obj": {
+                "Prop1": "b"
+            }
+        },
+        "Out": {
+            "EntSsnId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntSsn",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntSsnId": "1",
+                "Prop1": "a 2015"
+            }, {
+                "EntSsnId": "2",
+                "Prop1": "b 2015 by clicpilot\/undefined\/1"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntSsn",
+        "In": {
+            "obj": {
+                "Prop1": "c"
+            }
+        },
+        "Out": {
+            "EntSsnId": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntSsn",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntSsnId": "1",
+                "Prop1": "a 2015"
+            }, {
+                "EntSsnId": "2",
+                "Prop1": "b 2015 by clicpilot\/undefined\/1"
+            }, {
+                "EntSsnId": "3",
+                "Prop1": "c 2015 by clicpilot\/undefined\/2"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntSsn",
+        "In": {
+            "obj": {
+                "Prop1": "d"
+            }
+        },
+        "Out": {
+            "EntSsnId": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntSsn",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntSsnId": "1",
+                "Prop1": "a 2015"
+            }, {
+                "EntSsnId": "2",
+                "Prop1": "b 2015 by clicpilot\/undefined\/1"
+            }, {
+                "EntSsnId": "3",
+                "Prop1": "c 2015 by clicpilot\/undefined\/2"
+            }, {
+                "EntSsnId": "4",
+                "Prop1": "d 2015 by clicpilot\/undefined\/3"
+            }],
+            "count": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntSsn",
+        "In": {
+            "obj": {
+                "Prop1": "x"
+            }
+        },
+        "Out": {
+            "EntSsnId": "5"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntSsn",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntSsnId": "1",
+                "Prop1": "a 2015"
+            }, {
+                "EntSsnId": "2",
+                "Prop1": "b 2015 by clicpilot\/undefined\/1"
+            }, {
+                "EntSsnId": "3",
+                "Prop1": "c 2015 by clicpilot\/undefined\/2"
+            }, {
+                "EntSsnId": "4",
+                "Prop1": "d 2015 by clicpilot\/undefined\/3"
+            }, {
+                "EntSsnId": "5",
+                "Prop1": "x 2015 by clicpilot\/undefined\/4"
+            }],
+            "count": "5"
+        }
+    }]
+}

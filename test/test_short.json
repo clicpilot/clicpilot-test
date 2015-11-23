@@ -1,0 +1,291 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_short",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntShort",
+        "In": {
+            "obj": {
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3"
+            }
+        },
+        "Out": {
+            "EntShortId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntShort",
+        "In": {
+            "id": "1",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "1",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntShort",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntShortId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop5": "10"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntShort",
+        "In": {
+            "obj": {
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5"
+            }
+        },
+        "Out": {
+            "EntShortId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntShort",
+        "In": {
+            "id": "2",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "2",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntShort",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntShortId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop5": "10"
+            }, {
+                "EntShortId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "1",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntShort",
+        "In": {
+            "obj": {
+                "EntShortId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4",
+                "Prop5": "101"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "1",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop4": "4",
+            "Prop5": "101"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntShort",
+        "In": {
+            "id": "2",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntShort",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntShortId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4",
+                "Prop5": "101"
+            }, {
+                "EntShortId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntShort",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntShort",
+        "In": {
+            "id": "2",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntShortId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "1",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntShort",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntShortId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntShort",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntShort",
+        "In": {
+            "id": "2",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntShort",
+        "In": {
+            "id": "0",
+            "fields": ["EntShortId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntShort",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

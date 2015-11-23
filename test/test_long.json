@@ -1,0 +1,285 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_long",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntLong",
+        "In": {
+            "obj": {
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4"
+            }
+        },
+        "Out": {
+            "EntLongId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntLong",
+        "In": {
+            "id": "1",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop4": "4",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntLong",
+        "In": {
+            "id": "1",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "1",
+            "Prop1": "1",
+            "Prop2": "2",
+            "Prop3": "3",
+            "Prop4": "4",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntLong",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntLongId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4",
+                "Prop5": "10"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntLong",
+        "In": {
+            "obj": {
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4"
+            }
+        },
+        "Out": {
+            "EntLongId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntLong",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntLongId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4",
+                "Prop5": "10"
+            }, {
+                "EntLongId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop5": "10"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntLong",
+        "In": {
+            "obj": {
+                "EntLongId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntLong",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntLongId": "1",
+                "Prop1": "1",
+                "Prop2": "2",
+                "Prop3": "3",
+                "Prop4": "4",
+                "Prop5": "10"
+            }, {
+                "EntLongId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntLong",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntLongId": "2",
+            "Prop1": "2",
+            "Prop2": "3",
+            "Prop3": "4",
+            "Prop4": "5",
+            "Prop5": "10"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntLong",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntLongId": "2",
+                "Prop1": "2",
+                "Prop2": "3",
+                "Prop3": "4",
+                "Prop4": "5",
+                "Prop5": "10"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntLong",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntLong",
+        "In": {
+            "id": "2",
+            "fields": ["EntLongId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntLong",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

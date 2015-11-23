@@ -1,0 +1,291 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_double",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntDouble",
+        "In": {
+            "obj": {
+                "Prop1": "1.11111",
+                "Prop2": "2.22222",
+                "Prop3": "3.33333"
+            }
+        },
+        "Out": {
+            "EntDoubleId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDouble",
+        "In": {
+            "id": "1",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "1",
+            "Prop1": "1.11111",
+            "Prop2": "2.22222",
+            "Prop3": "3.33333",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "1",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "1",
+            "Prop1": "1.11111",
+            "Prop2": "2.22222",
+            "Prop3": "3.33333",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDouble",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDoubleId": "1",
+                "Prop1": "1.11111",
+                "Prop2": "2.22222",
+                "Prop3": "3.33333",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntDouble",
+        "In": {
+            "obj": {
+                "Prop1": "2.222222",
+                "Prop2": "3.333333",
+                "Prop3": "4.444444",
+                "Prop4": "5.555555"
+            }
+        },
+        "Out": {
+            "EntDoubleId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDouble",
+        "In": {
+            "id": "2",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "2",
+            "Prop1": "2.222222",
+            "Prop2": "3.333333",
+            "Prop3": "4.444444",
+            "Prop4": "5.555555",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "2",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "2",
+            "Prop1": "2.222222",
+            "Prop2": "3.333333",
+            "Prop3": "4.444444",
+            "Prop4": "5.555555",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDouble",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDoubleId": "1",
+                "Prop1": "1.11111",
+                "Prop2": "2.22222",
+                "Prop3": "3.33333",
+                "Prop5": "10.01"
+            }, {
+                "EntDoubleId": "2",
+                "Prop1": "2.222222",
+                "Prop2": "3.333333",
+                "Prop3": "4.444444",
+                "Prop4": "5.555555",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "1",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "1",
+            "Prop1": "1.11111",
+            "Prop2": "2.22222",
+            "Prop3": "3.33333",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntDouble",
+        "In": {
+            "obj": {
+                "EntDoubleId": "1",
+                "Prop1": "1.11111",
+                "Prop2": "2.22222",
+                "Prop3": "3.33333",
+                "Prop4": "4.44444",
+                "Prop5": "10.01"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "1",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "1",
+            "Prop1": "1.11111",
+            "Prop2": "2.22222",
+            "Prop3": "3.33333",
+            "Prop4": "4.44444",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDouble",
+        "In": {
+            "id": "2",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "2",
+            "Prop1": "2.222222",
+            "Prop2": "3.333333",
+            "Prop3": "4.444444",
+            "Prop4": "5.555555",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDouble",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDoubleId": "1",
+                "Prop1": "1.11111",
+                "Prop2": "2.22222",
+                "Prop3": "3.33333",
+                "Prop4": "4.44444",
+                "Prop5": "10.01"
+            }, {
+                "EntDoubleId": "2",
+                "Prop1": "2.222222",
+                "Prop2": "3.333333",
+                "Prop3": "4.444444",
+                "Prop4": "5.555555",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntDouble",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDouble",
+        "In": {
+            "id": "2",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDoubleId": "2",
+            "Prop1": "2.222222",
+            "Prop2": "3.333333",
+            "Prop3": "4.444444",
+            "Prop4": "5.555555",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "1",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDouble",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDoubleId": "2",
+                "Prop1": "2.222222",
+                "Prop2": "3.333333",
+                "Prop3": "4.444444",
+                "Prop4": "5.555555",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntDouble",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDouble",
+        "In": {
+            "id": "2",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDouble",
+        "In": {
+            "id": "0",
+            "fields": ["EntDoubleId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDouble",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

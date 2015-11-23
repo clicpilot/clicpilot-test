@@ -1,0 +1,710 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_aggregation2",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntAggr2B",
+        "In": {
+            "obj": {
+                "Prop2": "1"
+            }
+        },
+        "Out": {
+            "EntAggr2BId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2B",
+        "In": {
+            "obj": {
+                "Prop2": "2"
+            }
+        },
+        "Out": {
+            "EntAggr2BId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2B",
+        "In": {
+            "obj": {
+                "Prop2": "3"
+            }
+        },
+        "Out": {
+            "EntAggr2BId": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.5",
+                "Prop1": "1",
+                "Refe1": {
+                    "EntAggr2BId": "1"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.5",
+                "Prop1": "2",
+                "Refe1": {
+                    "EntAggr2BId": "2"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }, {
+                "Prop1": "2",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "2"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.5",
+                "Prop1": "3",
+                "Refe1": {
+                    "EntAggr2BId": "3"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }, {
+                "Prop1": "2",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "3",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "3"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "2"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.2",
+                "Prop1": "4",
+                "Refe1": {
+                    "EntAggr2BId": "2"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }, {
+                "Prop1": "2",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "3",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }, {
+                "Prop1": "4",
+                "P2": "0.2",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }],
+            "count": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "3"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "2",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.2",
+                "AVGProp2": 0,
+                "P": "2"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.4",
+                "Prop1": "5",
+                "Refe1": {
+                    "EntAggr2BId": "3"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "5"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }, {
+                "Prop1": "2",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "3",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }, {
+                "Prop1": "4",
+                "P2": "0.2",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "5",
+                "P2": "0.4",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }],
+            "count": "5"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "2",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.2",
+                "AVGProp2": 0,
+                "P": "2"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "2",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.4",
+                "AVGProp2": 0,
+                "P": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntAggr2",
+        "In": {
+            "obj": {
+                "Prop2": "0.6",
+                "Prop1": "6",
+                "Refe1": {
+                    "EntAggr2BId": "3"
+                }
+            }
+        },
+        "Out": {
+            "EntAggr2Id": "6"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEntAggr2Refe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntAggr2BId": "1",
+                "Prop2": "1"
+            }, {
+                "EntAggr2BId": "2",
+                "Prop2": "2"
+            }, {
+                "EntAggr2BId": "3",
+                "Prop2": "3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "Prop1": "1",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "1"
+                }
+            }, {
+                "Prop1": "2",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "3",
+                "P2": "0.5",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }, {
+                "Prop1": "4",
+                "P2": "0.2",
+                "Refe1": {
+                    "Prop2": "2"
+                }
+            }, {
+                "Prop1": "5",
+                "P2": "0.4",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }, {
+                "Prop1": "6",
+                "P2": "0.6",
+                "Refe1": {
+                    "Prop2": "3"
+                }
+            }],
+            "count": "6"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntAggr2Aggr",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "SUMProp2": 1,
+                "CNTProp2": "1",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.5",
+                "AVGProp2": 1,
+                "P": "1"
+            }, {
+                "SUMProp2": 1,
+                "CNTProp2": "2",
+                "MAXProp2": "0.5",
+                "MINProp2": "0.2",
+                "AVGProp2": 0,
+                "P": "2"
+            }, {
+                "SUMProp2": 2,
+                "CNTProp2": "3",
+                "MAXProp2": "0.6",
+                "MINProp2": "0.4",
+                "AVGProp2": 1,
+                "P": "3"
+            }],
+            "count": "3"
+        }
+    }]
+}

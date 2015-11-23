@@ -1,0 +1,3712 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_m2o_aw",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEM2OAWA",
+        "In": {
+            "obj": {
+                "Prop1": "a1"
+            }
+        },
+        "Out": {
+            "EM2OAWAId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "1",
+            "Prop1": "a1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "1",
+            "Prop1": "a1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWA",
+        "In": {
+            "obj": {
+                "Prop1": "a2",
+                "Refe1": {}
+            }
+        },
+        "Out": {
+            "EM2OAWAId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "2",
+            "Prop1": "a2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "2",
+            "Prop1": "a2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "2",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWA",
+        "In": {
+            "obj": {
+                "Prop1": "a3",
+                "Refe1": {}
+            }
+        },
+        "Out": {
+            "EM2OAWAId": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWB",
+        "In": {
+            "obj": {
+                "Prop2": "b1",
+                "InvRefe1": [{
+                    "EM2OAWAId": "1"
+                }]
+            }
+        },
+        "Out": {
+            "EM2OAWBId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "AddEM2OAWBInvRefe1",
+        "In": {
+            "obj": {
+                "EM2OAWBId": "1",
+                "InvRefe1": [{
+                    "EM2OAWAId": "2"
+                }]
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OAWB",
+        "In": {
+            "obj": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1",
+                "InvRefe1": [{
+                    "EM2OAWAId": "1"
+                }, {
+                    "EM2OAWAId": "2"
+                }, {
+                    "EM2OAWAId": "3"
+                }]
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OAWB",
+        "In": {
+            "obj": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1",
+                "InvRefe1": [{
+                    "EM2OAWAId": "2"
+                }, {
+                    "EM2OAWAId": "3"
+                }]
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "2",
+                "Prop1": "a2"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "2",
+                "Prop1": "a2",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWA",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "3",
+            "Prop1": "a3",
+            "Refe1": {
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "3",
+                "Prop1": "a3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }, {
+                "EM2OAWAId": "3",
+                "Prop1": "a3",
+                "Refe1": {
+                    "EM2OAWBId": "1",
+                    "Prop2": "b1"
+                }
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWB",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWA",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWB",
+        "In": {
+            "obj": {
+                "Prop2": "b1",
+                "InvRefe1": []
+            }
+        },
+        "Out": {
+            "EM2OAWBId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "2",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "2",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "2",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "2",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWB",
+        "In": {
+            "obj": {
+                "Prop2": "b2",
+                "InvRefe1": []
+            }
+        },
+        "Out": {
+            "EM2OAWBId": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "3",
+            "Prop2": "b2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "3",
+            "Prop2": "b2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "3",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWB",
+        "In": {
+            "obj": {
+                "Prop2": "b3",
+                "InvRefe1": []
+            }
+        },
+        "Out": {
+            "EM2OAWBId": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OAWA",
+        "In": {
+            "obj": {
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "2"
+                }
+            }
+        },
+        "Out": {
+            "EM2OAWAId": "4"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "2",
+                    "Prop2": "b1"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OAWA",
+        "In": {
+            "obj": {
+                "EM2OAWAId": "4",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "3"
+                }
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "3",
+                    "Prop2": "b2"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "2",
+                "Prop2": "b1"
+            }, {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWB",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OAWBId": "3",
+                    "Prop2": "b2"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OAWA",
+        "In": {
+            "obj": {
+                "EM2OAWAId": "4",
+                "Prop1": "a1x",
+                "Refe1": {
+                    "EM2OAWBId": "4"
+                }
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x",
+            "Refe1": {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x",
+            "Refe1": {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x",
+                "Refe1": {
+                    "EM2OAWBId": "4",
+                    "Prop2": "b3"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "RemoveEM2OAWBInvRefe1",
+        "In": {
+            "obj": {
+                "EM2OAWBId": "4",
+                "InvRefe1": [{
+                    "EM2OAWAId": "4"
+                }]
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "AddEM2OAWBInvRefe1",
+        "In": {
+            "obj": {
+                "EM2OAWBId": "4",
+                "InvRefe1": [{
+                    "EM2OAWAId": "4"
+                }]
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x",
+            "Refe1": {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OAWAId": "4",
+            "Prop1": "a1x",
+            "Refe1": {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OAWBId": "4",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWAId": "4",
+                "Prop1": "a1x",
+                "Refe1": {
+                    "EM2OAWBId": "4",
+                    "Prop2": "b3"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }, {
+                "EM2OAWBId": "4",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWB",
+        "In": {
+            "id": "4"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OAWBId": "3",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OAWB",
+        "In": {
+            "id": "3"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWA",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OAWB",
+        "In": {
+            "id": "4",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Read",
+        "In": {
+            "id": "4",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Read",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWAId", "Prop1", "Refe1,EM2OAWBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OAWB",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OAWBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWBInvRefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OAWBInvRefe1Update",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OAWB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

@@ -1,0 +1,232 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_time",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntTime",
+        "In": {
+            "obj": {
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01"
+            }
+        },
+        "Out": {
+            "EntTimeId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop5": "00:00:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop5": "00:00:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntTime",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntTimeId": "1",
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01",
+                "Prop5": "00:00:01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntTime",
+        "In": {
+            "obj": {
+                "EntTimeId": "1",
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01",
+                "Prop4": "00:04:01",
+                "Prop5": "00:00:01"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop4": "00:04:01",
+            "Prop5": "00:00:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop4": "00:04:01",
+            "Prop5": "00:00:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntTime",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntTimeId": "1",
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01",
+                "Prop4": "00:04:01",
+                "Prop5": "00:00:01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop4": "00:04:01",
+            "Prop5": "00:00:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntTime",
+        "In": {
+            "obj": {
+                "EntTimeId": "1",
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01",
+                "Prop4": "00:04:01",
+                "Prop5": "00:05:01"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop4": "00:04:01",
+            "Prop5": "00:05:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntTimeId": "1",
+            "Prop1": "00:01:01",
+            "Prop2": "00:02:01",
+            "Prop3": "00:03:01",
+            "Prop4": "00:04:01",
+            "Prop5": "00:05:01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntTime",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntTimeId": "1",
+                "Prop1": "00:01:01",
+                "Prop2": "00:02:01",
+                "Prop3": "00:03:01",
+                "Prop4": "00:04:01",
+                "Prop5": "00:05:01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntTime",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntTime",
+        "In": {
+            "id": "1",
+            "fields": ["EntTimeId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntTime",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

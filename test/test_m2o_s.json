@@ -1,0 +1,1305 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_m2o_s",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEM2OSB",
+        "In": {
+            "obj": {
+                "Prop2": "b1"
+            }
+        },
+        "Out": {
+            "EM2OSBId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "1",
+            "Prop2": "b1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OSB",
+        "In": {
+            "obj": {
+                "Prop2": "b2"
+            }
+        },
+        "Out": {
+            "EM2OSBId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "2",
+            "Prop2": "b2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "2",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "2",
+            "Prop2": "b2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OSB",
+        "In": {
+            "obj": {
+                "Prop2": "b3"
+            }
+        },
+        "Out": {
+            "EM2OSBId": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEM2OSA",
+        "In": {
+            "obj": {
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "1"
+                }
+            }
+        },
+        "Out": {
+            "EM2OSAId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "1",
+                    "Prop2": "b1"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OSA",
+        "In": {
+            "obj": {
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "2"
+                }
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "2",
+                    "Prop2": "b2"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OSA",
+        "In": {
+            "obj": {
+                "EM2OSAId": "1",
+                "Prop1": "a1"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEM2OSA",
+        "In": {
+            "obj": {
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "3"
+                }
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "3",
+                    "Prop2": "b3"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "1",
+                "Prop2": "b1"
+            }, {
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSB",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "3",
+                    "Prop2": "b3"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "2",
+                "Prop2": "b2"
+            }, {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSB",
+        "In": {
+            "id": "3"
+        },
+        "Out": {
+            "message": "Data is in use!"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSB",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {
+            "EM2OSAId": "1",
+            "Prop1": "a1",
+            "Refe1": {
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "1",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSAId": "1",
+                "Prop1": "a1",
+                "Refe1": {
+                    "EM2OSBId": "3",
+                    "Prop2": "b3"
+                }
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSB",
+        "In": {
+            "id": "3"
+        },
+        "Out": {
+            "message": "Data is in use!"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSA",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {
+            "EM2OSBId": "3",
+            "Prop2": "b3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EM2OSBId": "3",
+                "Prop2": "b3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEM2OSB",
+        "In": {
+            "id": "3"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSA",
+        "In": {
+            "id": "1",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSA",
+        "In": {
+            "id": "0",
+            "fields": ["EM2OSAId", "Prop1", "Refe1,EM2OSBId", "Refe1,Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryCandEM2OSARefe1Update",
+        "In": {
+            "id": "0",
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEM2OSB",
+        "In": {
+            "id": "3",
+            "fields": ["EM2OSBId", "Prop2"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSA",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEM2OSB",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

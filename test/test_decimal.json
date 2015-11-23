@@ -1,0 +1,291 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_decimal",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntDecimal",
+        "In": {
+            "obj": {
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33"
+            }
+        },
+        "Out": {
+            "EntDecimalId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDecimal",
+        "In": {
+            "id": "1",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "1",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "1",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "1",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDecimal",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDecimalId": "1",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "CreateEntDecimal",
+        "In": {
+            "obj": {
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44"
+            }
+        },
+        "Out": {
+            "EntDecimalId": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDecimal",
+        "In": {
+            "id": "2",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "2",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop4": "4.44",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "2",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "2",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop4": "4.44",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDecimal",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDecimalId": "1",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop5": "10.01"
+            }, {
+                "EntDecimalId": "2",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "1",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "1",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntDecimal",
+        "In": {
+            "obj": {
+                "EntDecimalId": "1",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44",
+                "Prop5": "10.01"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "1",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "1",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop4": "4.44",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDecimal",
+        "In": {
+            "id": "2",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "2",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop4": "4.44",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDecimal",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDecimalId": "1",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44",
+                "Prop5": "10.01"
+            }, {
+                "EntDecimalId": "2",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44",
+                "Prop5": "10.01"
+            }],
+            "count": "2"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntDecimal",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDecimal",
+        "In": {
+            "id": "2",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDecimalId": "2",
+            "Prop1": "1.11",
+            "Prop2": "2.22",
+            "Prop3": "3.33",
+            "Prop4": "4.44",
+            "Prop5": "10.01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "1",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDecimal",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDecimalId": "2",
+                "Prop1": "1.11",
+                "Prop2": "2.22",
+                "Prop3": "3.33",
+                "Prop4": "4.44",
+                "Prop5": "10.01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntDecimal",
+        "In": {
+            "id": "2"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDecimal",
+        "In": {
+            "id": "2",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDecimal",
+        "In": {
+            "id": "0",
+            "fields": ["EntDecimalId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDecimal",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

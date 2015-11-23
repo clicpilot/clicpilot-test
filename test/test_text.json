@@ -1,0 +1,145 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_text",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntText",
+        "In": {
+            "obj": {
+                "Prop1": "abc",
+                "Prop2": "abcde",
+                "Prop3": "abc"
+            }
+        },
+        "Out": {
+            "EntTextId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {
+            "EntTextId": "1",
+            "Prop1": "abc",
+            "Prop2": "abcde",
+            "Prop3": "abc"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {
+            "EntTextId": "1",
+            "Prop1": "abc",
+            "Prop2": "abcde",
+            "Prop3": "abc"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntText",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntTextId": "1",
+                "Prop1": "abc",
+                "Prop2": "abcde",
+                "Prop3": "abc"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntText",
+        "In": {
+            "obj": {
+                "EntTextId": "1",
+                "Prop1": "abc1",
+                "Prop2": "abcde",
+                "Prop3": "abc3"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {
+            "EntTextId": "1",
+            "Prop1": "abc1",
+            "Prop2": "abcde",
+            "Prop3": "abc3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {
+            "EntTextId": "1",
+            "Prop1": "abc1",
+            "Prop2": "abcde",
+            "Prop3": "abc3"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntText",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntTextId": "1",
+                "Prop1": "abc1",
+                "Prop2": "abcde",
+                "Prop3": "abc3"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntText",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntText",
+        "In": {
+            "id": "1",
+            "fields": ["EntTextId", "Prop1", "Prop2", "Prop3", "Prop4"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntText",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

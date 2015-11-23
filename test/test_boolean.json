@@ -1,0 +1,207 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_boolean",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntBool",
+        "In": {
+            "obj": {
+                "Prop1": "true",
+                "Prop2": ""
+            }
+        },
+        "Out": {
+            "EntBoolId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "true",
+            "Prop3": "true"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "true",
+            "Prop3": "true"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntBool",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntBoolId": "1",
+                "Prop1": "true",
+                "Prop3": "true"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntBool",
+        "In": {
+            "obj": {
+                "EntBoolId": "1",
+                "Prop1": "false",
+                "Prop2": "true",
+                "Prop3": "false"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "false",
+            "Prop2": "true",
+            "Prop3": "false"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "false",
+            "Prop2": "true",
+            "Prop3": "false"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntBool",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntBoolId": "1",
+                "Prop1": "false",
+                "Prop2": "true",
+                "Prop3": "false"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "false",
+            "Prop2": "true",
+            "Prop3": "false"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntBool",
+        "In": {
+            "obj": {
+                "EntBoolId": "1",
+                "Prop1": "false",
+                "Prop2": "false",
+                "Prop3": "false"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "false",
+            "Prop2": "false",
+            "Prop3": "false"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {
+            "EntBoolId": "1",
+            "Prop1": "false",
+            "Prop2": "false",
+            "Prop3": "false"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntBool",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntBoolId": "1",
+                "Prop1": "false",
+                "Prop2": "false",
+                "Prop3": "false"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntBool",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntBool",
+        "In": {
+            "id": "1",
+            "fields": ["EntBoolId", "Prop1", "Prop2", "Prop3"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntBool",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}

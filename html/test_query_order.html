@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+
+
+
+  </head>
+  <body>
+
+    <h1>Test Order</h1>
+    <pre id="msg"></pre>
+      <h4>Create</h4>
+      <form class="cp-create" cp-entity-name="EntOrder" cp-action-name="CreateEntOrder" cp-complete-observer="['CreateEntOrder', 'QueryEntOrderDesc', 'QueryEntOrderAsc']">
+        <label>Prop1</label><p>
+        <input type="text" class="cp-string" cp-prop-name="Prop1" value="">
+        </input>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+      
+      <h4>Query DESC</h4>
+      <ul class="cp-query" cp-entity-name="EntOrder" cp-action-name="QueryEntOrderDesc" cp-field="['EntOrderId','Prop1 P']" cp-order-field="['P']" cp-order-type="DESC">
+        <li>
+          <span>{{=it.EntOrderId}}</span>
+          <span>{{=it.P}}</span>
+        </li>
+      </ul>
+
+            <h4>Query ASC</h4>
+      <ul class="cp-query" cp-entity-name="EntOrder" cp-action-name="QueryEntOrderAsc" cp-field="['EntOrderId','Prop1 P']" cp-order-field="['P']" cp-order-type="ASC">
+        <li>
+          <span>{{=it.EntOrderId}}</span>
+          <span>{{=it.P}}</span>
+        </li>
+      </ul>
+
+
+          <script>
+    window.ShowError = function(msg) {
+      $("#msg").text(msg);
+    }
+
+    window.ShowActionMsg = window.ShowError;
+    window.ShowMessage = window.ShowError;
+
+
+    function initPage() {
+      if(window.CP_Loaded) {
+        for(var i=0;i<221;i++) {
+
+          $("INPUT.cp-string").val("a"+i);
+          $(".cp-submit").click();
+        }
+      } else {
+        setTimeout(initPage, 200);
+      }
+    }
+
+    initPage();
+
+    </script>
+      <script src="../jquery-1.11.1.min.js"></script>
+    </body>
+
+</html>  

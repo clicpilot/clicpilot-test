@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+  </head>
+  <body>
+
+    <h1>Test Condition</h1>
+    <pre id="msg"></pre>
+      <h4>Create</h4>
+      <form class="cp-create" cp-entity-name="EntStrCond" cp-action-name="CreateEntStrCond">
+        <label>Prop1</label><p/>
+        <input type="text" class="cp-string" cp-prop-name="Prop1" value="">
+        </input><p/>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+      
+      <h4>Query Start With</h4>
+      <form>
+        <label>Prop1</label><p/>
+        <input id="PP1" type="text" value="">
+        </input><p/>
+        <button type="button" onclick="javascript:CP_DoAction('QueryEntStrCond1');">Query</button>
+      </form>
+      <ul class="cp-query" cp-entity-name="EntStrCond" cp-action-name="QueryEntStrCond1" cp-field="['EntStrCondId','Prop1 P']" cp-condition-expr="Prop1 Start-With #PP1" cp-order-field="['P']" cp-order-type="DESC">
+        <li>
+          <span>{{=it.EntStrCondId}}</span>
+          <span>{{=it.P}}</span>
+        </li>
+      </ul>
+
+      <h4>Query End With</h4>
+      <form>
+        <label>Prop1</label><p/>
+        <input id="PP2" type="text" value="">
+        </input><p/>
+        <button type="button" onclick="javascript:CP_DoAction('QueryEntStrCond2');">Query</button>
+      </form>
+      <ul class="cp-query" cp-entity-name="EntStrCond" cp-action-name="QueryEntStrCond2" cp-field="['EntStrCondId','Prop1 P']" cp-condition-expr="Prop1 End-With #PP2" cp-order-field="['P']" cp-order-type="DESC">
+        <li>
+          <span>{{=it.EntStrCondId}}</span>
+          <span>{{=it.P}}</span>
+        </li>
+      </ul>
+
+      <h4>Query Contains</h4>
+      <form>
+        <label>Prop1</label><p/>
+        <input id="PP3" type="text" value="">
+        </input><p/>
+        <button type="button" onclick="javascript:CP_DoAction('QueryEntStrCond3');">Query</button>
+      </form>
+      <ul class="cp-query" cp-entity-name="EntStrCond" cp-action-name="QueryEntStrCond3" cp-field="['EntStrCondId','Prop1 P']" cp-condition-expr="Prop1 Contains #PP3" cp-order-field="['P']" cp-order-type="DESC">
+        <li>
+          <span>{{=it.EntStrCondId}}</span>
+          <span>{{=it.P}}</span>
+        </li>
+      </ul>
+
+
+
+          <script>
+    window.ShowError = function(msg) {
+      $("#msg").text(msg);
+    }
+
+    window.ShowActionMsg = window.ShowError;
+    window.ShowMessage = window.ShowError;
+
+
+    function initPage() {
+      if(window.CP_Loaded) {
+        
+      } else {
+        setTimeout(initPage, 200);
+      }
+    }
+
+    initPage();
+
+    </script>
+      <script src="../jquery-1.11.1.min.js"></script>
+    </body>
+
+</html>  

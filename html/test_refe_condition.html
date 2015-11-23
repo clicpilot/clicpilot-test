@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Test M2O</h1>
+      <h4>Create A</h4>
+      <form class="cp-create" cp-entity-name="EM2OCNDA" cp-action-name="CreateEM2OCNDA" cp-complete-observer="['CreateEM2OCNDA', 'CreateEM2OCNDB', 'CreateEM2OCNDC', 'QueryEM2OCNDA', 'QueryEM2OCNDB', 'QueryEM2OCNDC']">
+        <label>Prop1</label>
+        <input type="text" class="cp-string" cp-prop-name="Prop1" value="">
+        </input>
+        <label>Refe1</label>
+        <select id="EM2OCND-refe1-select" class="cp-many2one" cp-refe-name="Refe1" cp-inv-name="InvRefe1" cp-refe-entity="EM2OCNDB" cp-refe-cand="QueryCandEM2OCNDARefe1">
+          <option value="0">&nbsp;</option>
+          <option class="cp-query-ref-candidate" cp-action-name="QueryCandEM2OCNDARefe1" cp-container-id="EM2OCND-refe1-select" cp-entity-name="EM2OCNDA" cp-refe-name="Refe1" cp-refe-entity="EM2OCNDB" cp-field="['EM2OCNDBId', 'Prop2']" value="{{=it.EM2OCNDBId}}">{{=it.Prop2}}</option>
+        <select>
+       	<label>Refe2</label>
+        <select id="EM2OCND-refe2-select" class="cp-many2one" cp-refe-name="Refe2" cp-inv-name="InvRefe2" cp-refe-entity="EM2OCNDC" cp-refe-cand="QueryCandEM2OCNDARefe2">
+          <option value="0">&nbsp;</option>
+          <option class="cp-query-ref-candidate" cp-action-name="QueryCandEM2OCNDARefe2" cp-container-id="EM2OCND-refe2-select" cp-entity-name="EM2OCNDA" cp-refe-name="Refe2" cp-refe-entity="EM2OCNDC" cp-field="['EM2OCNDCId', 'Prop3']" value="{{=it.EM2OCNDCId}}">{{=it.Prop3}}</option>
+        <select>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+
+      <h4>Create B</h4>
+      <form class="cp-create" cp-entity-name="EM2OCNDB" cp-action-name="CreateEM2OCNDB" cp-complete-observer="['CreateEM2OCNDA', 'CreateEM2OCNDB', 'CreateEM2OCNDC', 'QueryEM2OCNDA', 'QueryEM2OCNDB', 'QueryEM2OCNDC']">
+        <label>Prop2</label>
+        <input type="text" class="cp-string" cp-prop-name="Prop2" value="">
+        </input>
+
+        <label>InvRefe1</label>
+        <input type="hidden" id="cnd" value="c1">
+        </input>
+        <select multiple="multiple" row="8" id="EM2OCND-invrefe1-select" class="cp-many2one" cp-inv-refe="true" cp-refe-name="InvRefe1" cp-refe-entity="EM2OCNDA" cp-refe-cand="QueryCandEM2OCNDBInvRefe1">
+          <option class="cp-query-ref-candidate" cp-action-name="QueryCandEM2OCNDBInvRefe1" cp-container-id="EM2OCND-invrefe1-select" cp-entity-name="EM2OCNDB" cp-refe-name="InvRefe1" cp-field="['EM2OCNDAId', 'Prop1']" cp-condition="Refe2.Prop3 Start-With #cnd" value="{{=it.EM2OCNDAId}}">{{=it.Prop1||'&nbsp;'}}</option>
+        <select>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+
+      <h4>Create C</h4>
+      <form class="cp-create" cp-entity-name="EM2OCNDC" cp-action-name="CreateEM2OCNDC" cp-complete-observer="['CreateEM2OCNDA', 'CreateEM2OCNDB', 'CreateEM2OCNDC', 'QueryEM2OCNDA', 'QueryEM2OCNDB', 'QueryEM2OCNDC']">
+        <label>Prop3</label>
+        <input type="text" class="cp-string" cp-prop-name="Prop3" value="">
+        </input>
+
+        <label>InvRefe2</label>
+        <select multiple="multiple" row="8" id="EM2OCND-invrefe2-select" class="cp-many2one" cp-inv-refe="true" cp-refe-name="InvRefe2" cp-refe-entity="EM2OCNDA" cp-refe-cand="QueryCandEM2OCNDCInvRefe2">
+          <option class="cp-query-ref-candidate" cp-action-name="QueryCandEM2OCNDCInvRefe2" cp-container-id="EM2OCND-invrefe2-select" cp-entity-name="EM2OCNDC" cp-refe-name="InvRefe2" cp-field="['EM2OCNDAId', 'Prop1']" value="{{=it.EM2OCNDAId}}">{{=it.Prop1||'&nbsp;'}}</option>
+        <select>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+
+
+      <h4>Query A</h4>
+      <ul class="cp-query" cp-entity-name="EM2OCNDA" cp-action-name="QueryEM2OCNDA" cp-field="['EM2OCNDAId', 'Prop1', 'Refe1.EM2OCNDBId', 'Refe1.Prop2', 'Refe2.EM2OCNDCId', 'Refe2.Prop3']">
+        <li>
+          <span>{{=it.EM2OCNDAId||'&nbsp;'}}</span>
+          <span>{{=it.Prop1||'&nbsp;'}}</span>
+          <span>{{=(it.Refe1?(it.Refe1.EM2OCNDBId||'&nbsp;'):'&nbsp;')}}</span>
+          <span>{{=(it.Refe1?(it.Refe1.Prop2||'&nbsp;'):'&nbsp;')}}</span>
+          <span>{{=(it.Refe2?(it.Refe2.EM2OCNDCId||'&nbsp;'):'&nbsp;')}}</span>
+          <span>{{=(it.Refe2?(it.Refe2.Prop3||'&nbsp;'):'&nbsp;')}}</span>
+        </li>
+      </ul>
+
+      <h4>Query B</h4>
+      <ul class="cp-query" cp-entity-name="EM2OCNDB" cp-action-name="QueryEM2OCNDB" cp-field="['EM2OCNDBId', 'Prop2']">
+        <li>
+          <span>{{=it.EM2OCNDBId||'&nbsp;'}}</span>
+          <span>{{=it.Prop2||'&nbsp;'}}</span>
+        </li>
+      </ul>
+
+      <h4>Query C</h4>
+      <ul class="cp-query" cp-entity-name="EM2OCNDC" cp-action-name="QueryEM2OCNDC" cp-field="['EM2OCNDCId', 'Prop3']">
+        <li>
+          <span>{{=it.EM2OCNDCId||'&nbsp;'}}</span>
+          <span>{{=it.Prop3||'&nbsp;'}}</span>
+        </li>
+      </ul>
+      <button type="button" onclick="javascript:CP_DoAction('QueryCandEM2OCNDBInvRefe1')">Test</button>
+      <script src="../jquery-1.11.1.min.js"></script>
+    </body>
+    
+</html>  

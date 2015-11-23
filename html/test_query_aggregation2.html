@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+
+
+  </head>
+  <body>
+
+    <h1>Test Aggregation 2</h1>
+    <pre id="msg"></pre>
+      <h4>Create</h4>
+      <form class="cp-create" cp-entity-name="EntAggr2" cp-action-name="CreateEntAggr2" cp-complete-observer="['CreateEntAggr2', 'CreateEntAggr2B', 'QueryEntAggr2', 'QueryEntAggr2Aggr']">
+        <label>Prop1</label>
+        <input type="text" class="cp-string" cp-prop-name="Prop1" value="">
+        </input><p/>
+        <label>Prop2</label>
+        <input type="text" class="cp-float" cp-prop-name="Prop2" value="">
+        </input><p/>
+        <label>Refe1</label>
+        <select id="EntAggr2-refe1-select" class="cp-many2one-s" cp-refe-name="Refe1" cp-refe-entity="EntAggr2B" cp-refe-cand="QueryCandEntAggr2Refe1">
+          <option value="0">&nbsp;</option>
+          <option class="cp-query-ref-candidate" cp-action-name="QueryCandEntAggr2Refe1" cp-container-id="EntAggr2-refe1-select" cp-entity-name="EntAggr2" cp-refe-name="Refe1" cp-refe-entity="EntAggr2B" cp-field="['EntAggr2BId', 'Prop2']" value="{{=it.EntAggr2BId}}">{{=it.Prop2}}</option>
+        <select>
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+      
+      <h4>Create B</h4>
+      <form class="cp-create" cp-entity-name="EntAggr2B" cp-action-name="CreateEntAggr2B" cp-complete-observer="['CreateEntAggr2', 'CreateEntAggr2B', 'QueryEntAggr2', 'QueryEntAggr2Aggr']">
+        <label>Prop2</label>
+        <input type="text" class="cp-string" cp-prop-name="Prop2" value="">
+        </input>
+        
+        <button type="button" class="cp-submit">Create</button>
+      </form>
+
+      <h4>Query</h4>
+      <ul class="cp-query" cp-entity-name="EntAggr2" cp-action-name="QueryEntAggr2" cp-field="['Prop1', ' Prop2 P2', 'Refe1.Prop2']" cp-order-field="['Prop1', 'P2']" cp-order-type="DESC">
+        <li>
+          <span>{{=it.Prop1}}</span>
+          <span>{{=it.P2}}</span>
+          <span>{{=(it.Refe1 ? it.Refe1.Prop2:'')}}</span>
+        </li>
+      </ul>
+
+      <h4>Aggregation</h4>
+      <ul class="cp-query" cp-entity-name="EntAggr2" cp-action-name="QueryEntAggr2Aggr" cp-field="['Refe1.Prop2 P', 'SUM Prop2 SUMProp2', 'COUNT Prop2 CNTProp2', 'MAX Prop2 MAXProp2', 'MIN Prop2 MINProp2', 'AVG Prop2 AVGProp2']" cp-order-field="['SUMProp2', 'P']" cp-order-type="DESC">
+        <li>
+          <span id="aggrlabel">{{=it.P}}</span>
+          <span>{{=it.SUMProp2}}</span>
+          <span>{{=it.CNTProp2}}</span>
+          <span>{{=it.MAXProp2}}</span>
+          <span>{{=it.MINProp2}}</span>
+          <span>{{=it.AVGProp2}}</span>
+        </li>
+
+      </ul>
+      <canvas id="myChart" width="100" height="100"></canvas>
+
+
+          <script>
+    window.ShowError = function(msg) {
+      $("#msg").text(msg);
+    }
+
+    window.ShowActionMsg = window.ShowError;
+    window.ShowMessage = window.ShowError;
+
+    function initPage() {
+      if(window.CP_Loaded) {
+        
+        
+
+        CP_AfterAction('QueryEntAggr2Aggr', function(arg, param){
+          
+          var color = [
+              {
+
+                  color:"#F7464A",
+                  highlight: "#FF5A5E",
+
+              },
+              {
+
+                  color: "#46BFBD",
+                  highlight: "#5AD3D1",
+
+              },
+              {
+
+                  color: "#FDB45C",
+                  highlight: "#FFC870",
+
+              }
+          ];
+          data = [];
+          if(param.obj && param.obj.data) {
+            for(var i=0;i<param.obj.data.length;i++){
+              data.push({
+                  value: eval(param.obj.data[i].AVGProp2),
+                  color:color[i].color,
+                  highlight: color[i].highlight,
+                  label: param.obj.data[i].P
+              });
+            }
+          }
+          var ctx = document.getElementById("myChart").getContext("2d");
+          window.myNewChart = new Chart(ctx).Pie(data);
+            
+        });
+      } else {
+        setTimeout(initPage, 200);
+      }
+    }
+
+    initPage();
+
+
+   
+
+    </script>
+      <script src="../js/Chart.min.js"></script>
+      <script src="../jquery-1.11.1.min.js"></script>
+    </body>
+
+</html>  

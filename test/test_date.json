@@ -1,0 +1,232 @@
+{
+    "ObjectType": "TestCase",
+    "Name": "test_date",
+    "Item": [{
+        "Folder": "Default",
+        "Action": "CreateEntDate",
+        "In": {
+            "obj": {
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03"
+            }
+        },
+        "Out": {
+            "EntDateId": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop5": "2015-06-01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop5": "2015-06-01"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDate",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDateId": "1",
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03",
+                "Prop5": "2015-06-01"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntDate",
+        "In": {
+            "obj": {
+                "EntDateId": "1",
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03",
+                "Prop4": "2015-04-04",
+                "Prop5": "2015-06-06"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop4": "2015-04-04",
+            "Prop5": "2015-06-06"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop4": "2015-04-04",
+            "Prop5": "2015-06-06"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDate",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDateId": "1",
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03",
+                "Prop4": "2015-04-04",
+                "Prop5": "2015-06-06"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop4": "2015-04-04",
+            "Prop5": "2015-06-06"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "UpdateEntDate",
+        "In": {
+            "obj": {
+                "EntDateId": "1",
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03",
+                "Prop4": "2015-04-04",
+                "Prop5": "2015-05-05"
+            }
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop4": "2015-04-04",
+            "Prop5": "2015-05-05"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {
+            "EntDateId": "1",
+            "Prop1": "2015-01-01",
+            "Prop2": "2015-02-02",
+            "Prop3": "2015-03-03",
+            "Prop4": "2015-04-04",
+            "Prop5": "2015-05-05"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDate",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [{
+                "EntDateId": "1",
+                "Prop1": "2015-01-01",
+                "Prop2": "2015-02-02",
+                "Prop3": "2015-03-03",
+                "Prop4": "2015-04-04",
+                "Prop5": "2015-05-05"
+            }],
+            "count": "1"
+        }
+    }, {
+        "Folder": "Default",
+        "Action": "DeleteEntDate",
+        "In": {
+            "id": "1"
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "ReadUpdateEntDate",
+        "In": {
+            "id": "1",
+            "fields": ["EntDateId", "Prop1", "Prop2", "Prop3", "Prop4", "Prop5"]
+        },
+        "Out": {}
+    }, {
+        "Folder": "Default",
+        "Action": "QueryEntDate",
+        "In": {
+            "conditions": {}
+        },
+        "Out": {
+            "data": [],
+            "count": "0"
+        }
+    }]
+}
