@@ -1,0 +1,1 @@
+This is a application to test all the clicpilot js functions.
