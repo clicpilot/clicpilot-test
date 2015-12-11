@@ -1,1 +1,1 @@
-This is an application to test all the clicpilot js functions. 
+This is an application to test all the clicpilot-js functions. Run the main.html and go to console to find the test. Run "Test All" to execute the test cases. 
